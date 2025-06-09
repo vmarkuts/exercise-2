@@ -1,0 +1,1 @@
+const i=document.createElement('input'),p=document.createElement('img');i.type='file';i.accept='image/*';i.onchange=e=>{const f=e.target.files[0];if(f){const r=new FileReader();r.onload=()=>{p.src=r.result;};r.readAsDataURL(f);}};document.body.append(i,p);
