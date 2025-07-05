@@ -1,0 +1,1 @@
+const toggleBtn=document.createElement('button');toggleBtn.textContent='Toggle Theme';document.body.appendChild(toggleBtn);let darkMode=false;toggleBtn.onclick=()=>{document.body.style.background=darkMode?'#fff':'#222';document.body.style.color=darkMode?'#000':'#fff';darkMode=!darkMode;};
