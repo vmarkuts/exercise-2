@@ -1,0 +1,1 @@
+const f=document.createElement('form'),i=document.createElement('input'),m=document.createElement('div'),b=document.createElement('button');i.required=true;i.placeholder='Enter email';b.textContent='Submit';f.onsubmit=e=>{e.preventDefault();m.textContent=i.checkValidity()?'Valid ✅':'Invalid ❌';};f.append(i,b,m);document.body.appendChild(f);
